@@ -1,0 +1,20 @@
+{
+    "keyboard_name": "Helldiver", 
+    "manufacturer": "LordOfIntegrity",
+    "url": "", 
+    "maintainer": "LordOfIntegrity", 
+    "usb": {
+        "vid": "0x04D8",
+        "pid": "0xEB2D",
+        "device_version": "1.0.0"
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"x":0, "y":0.5}, {"x":1, "y":0.375}, {"x":2, "y":0.125},
+                {"x":0, "y":1.5}, {"x":1, "y":1.375}, {"x":2, "y":1.125},
+                {"x":0, "y":2.5}, {"x":1, "y":2.375}, {"x":2, "y":2.125}
+            ]
+        }
+    }
+}
