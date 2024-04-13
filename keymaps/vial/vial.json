@@ -13,21 +13,301 @@
             ["2,0", "2,1", "2,2"]
         ]
     },
-    "customKeycodes": [
-        {
-            "name": "AAC_8_AUTOCANNON_SENTRY",
-            "title": "AAC 8 Autocannon Sentry",
-            "shortName": "AAC_8_AUTOCANNON_SENTRY"
-        },
-        {
-          "name": "RESUPPLY",
-          "title": "Resupply",
-          "shortName": "RESUPPLY"
-        },
-        {
-            "name": "REINFORCE",
-            "title": "Reinforce",
-            "shortName": "REINFORCE"
-        }
+    "customKeycodes": [ 
+      {
+        "name": "A/AC-",
+        "title": "A/Ac-8 Autocannon Sentry",
+        "shortName": "AAC_8_AUTOCANNON_SENTRY"
+      },
+      {
+        "name": "A/ARC",
+        "title": "A/Arc-3 Tesla Tower",
+        "shortName": "AARC_3_TESLA_TOWER"
+      },
+      {
+        "name": "A/G-1",
+        "title": "A/G-16 Gatling Sentry",
+        "shortName": "AG_16_GATLING_SENTRY"
+      },
+      {
+        "name": "A/M-1",
+        "title": "A/M-12 Mortar Sentry",
+        "shortName": "AM_12_MORTAR_SENTRY"
+      },
+      {
+        "name": "A/M-2",
+        "title": "A/M-23 Ems Mortar Sentry",
+        "shortName": "AM_23_EMS_MORTAR_SENTRY"
+      },
+      {
+        "name": "A/MG-",
+        "title": "A/Mg-43 Machine Gun Sentry",
+        "shortName": "AMG_43_MACHINE_GUN_SENTRY"
+      },
+      {
+        "name": "A/MLS",
+        "title": "A/Mls-4X Rocket Sentry",
+        "shortName": "AMLS_4X_ROCKET_SENTRY"
+      },
+      {
+        "name": "AC-8",
+        "title": "Ac-8 Autocannon",
+        "shortName": "AC_8_AUTOCANNON"
+      },
+      {
+        "name": "AD-33",
+        "title": "Ad-334 Guard Dog",
+        "shortName": "AD_334_GUARD_DOG"
+      },
+      {
+        "name": "APW-1",
+        "title": "Apw-1 Anti-Materiel Rifle",
+        "shortName": "APW_1_ANTI_MATERIEL_RIFLE"
+      },
+      {
+        "name": "ARC-3",
+        "title": "Arc-3 Arc Thrower",
+        "shortName": "ARC_3_ARC_THROWER"
+      },
+      {
+        "name": "E/MG-",
+        "title": "E/Mg-101 Hmg Emplacement",
+        "shortName": "EMG_101_HMG_EMPLACEMENT"
+      },
+      {
+        "name": "EAT-1",
+        "title": "Eat-17",
+        "shortName": "EAT_17"
+      },
+      {
+        "name": "EXO-4",
+        "title": "Exo-45 Patriot Exosuit",
+        "shortName": "EXO_45_PATRIOT_EXOSUIT"
+      },
+      {
+        "name": "Eagle",
+        "title": "Eagle 110Mm Rocket Pods",
+        "shortName": "EAGLE_110MM_ROCKET_PODS"
+      },
+      {
+        "name": "Eagle",
+        "title": "Eagle 500Kg Bomb",
+        "shortName": "EAGLE_500KG_BOMB"
+      },
+      {
+        "name": "Eagle",
+        "title": "Eagle Airstrike",
+        "shortName": "EAGLE_AIRSTRIKE"
+      },
+      {
+        "name": "Eagle",
+        "title": "Eagle Cluster Bomb",
+        "shortName": "EAGLE_CLUSTER_BOMB"
+      },
+      {
+        "name": "Eagle",
+        "title": "Eagle Napalm Strike",
+        "shortName": "EAGLE_NAPALM_STRIKE"
+      },
+      {
+        "name": "Eagle",
+        "title": "Eagle Rearm",
+        "shortName": "EAGLE_REARM"
+      },
+      {
+        "name": "Eagle",
+        "title": "Eagle Smoke Strike",
+        "shortName": "EAGLE_SMOKE_STRIKE"
+      },
+      {
+        "name": "Eagle",
+        "title": "Eagle Strafing Run",
+        "shortName": "EAGLE_STRAFING_RUN"
+      },
+      {
+        "name": "FAF-1",
+        "title": "Faf-14 Spear Launcher",
+        "shortName": "FAF_14_SPEAR_LAUNCHER"
+      },
+      {
+        "name": "FLAM-",
+        "title": "Flam-40 Incinerator",
+        "shortName": "FLAM_40_INCINERATOR"
+      },
+      {
+        "name": "FX-12",
+        "title": "Fx-12 Shield Generator Relay",
+        "shortName": "FX_12_SHIELD_GENERATOR_RELAY"
+      },
+      {
+        "name": "GL-21",
+        "title": "Gl-21 Grenade Launcher",
+        "shortName": "GL_21_GRENADE_LAUNCHER"
+      },
+      {
+        "name": "GR-8",
+        "title": "Gr-8 Recoilless Rifle",
+        "shortName": "GR_8_RECOILLESS_RIFLE"
+      },
+      {
+        "name": "Illum",
+        "title": "Illumination Flare",
+        "shortName": "ILLUMINATION_FLARE"
+      },
+      {
+        "name": "LAS-9",
+        "title": "Las-98 Laser Cannon",
+        "shortName": "LAS_98_LASER_CANNON"
+      },
+      {
+        "name": "LAS-9",
+        "title": "Las-99 Quasar Cannon",
+        "shortName": "LAS_99_QUASAR_CANNON"
+      },
+      {
+        "name": "LIFT-",
+        "title": "Lift-850 Jump Pack",
+        "shortName": "LIFT_850_JUMP_PACK"
+      },
+      {
+        "name": "M-105",
+        "title": "M-105 Stalwart",
+        "shortName": "M_105_STALWART"
+      },
+      {
+        "name": "MD-6",
+        "title": "Md-6 Anti-Personnel Minefield",
+        "shortName": "MD_6_ANTI_PERSONNEL_MINEFIELD"
+      },
+      {
+        "name": "MD-I4",
+        "title": "Md-I4 Incendiary Mines",
+        "shortName": "MD_I4_INCENDIARY_MINES"
+      },
+      {
+        "name": "MG-20",
+        "title": "Mg-206 Heavy Machine Gun",
+        "shortName": "MG_206_HEAVY_MACHINE_GUN"
+      },
+      {
+        "name": "MG-43",
+        "title": "Mg-43 Machine Gun",
+        "shortName": "MG_43_MACHINE_GUN"
+      },
+      {
+        "name": "NUX-2",
+        "title": "Nux-223 Hellbomb",
+        "shortName": "NUX_223_HELLBOMB"
+      },
+      {
+        "name": "Orbit",
+        "title": "Orbital 120Mm He Barrage",
+        "shortName": "ORBITAL_120MM_HE_BARRAGE"
+      },
+      {
+        "name": "Orbit",
+        "title": "Orbital 380Mm He Barrage",
+        "shortName": "ORBITAL_380MM_HE_BARRAGE"
+      },
+      {
+        "name": "Orbit",
+        "title": "Orbital Airburst Strike",
+        "shortName": "ORBITAL_AIRBURST_STRIKE"
+      },
+      {
+        "name": "Orbit",
+        "title": "Orbital Ems Strike",
+        "shortName": "ORBITAL_EMS_STRIKE"
+      },
+      {
+        "name": "Orbit",
+        "title": "Orbital Gas Strike",
+        "shortName": "ORBITAL_GAS_STRIKE"
+      },
+      {
+        "name": "Orbit",
+        "title": "Orbital Gatling Barrage",
+        "shortName": "ORBITAL_GATLING_BARRAGE"
+      },
+      {
+        "name": "Orbit",
+        "title": "Orbital Laser",
+        "shortName": "ORBITAL_LASER"
+      },
+      {
+        "name": "Orbit",
+        "title": "Orbital Precision Strike",
+        "shortName": "ORBITAL_PRECISION_STRIKE"
+      },
+      {
+        "name": "Orbit",
+        "title": "Orbital Railcannon Strike",
+        "shortName": "ORBITAL_RAILCANNON_STRIKE"
+      },
+      {
+        "name": "Orbit",
+        "title": "Orbital Smoke Strike",
+        "shortName": "ORBITAL_SMOKE_STRIKE"
+      },
+      {
+        "name": "Orbit",
+        "title": "Orbital Walking Barrage",
+        "shortName": "ORBITAL_WALKING_BARRAGE"
+      },
+      {
+        "name": "RS-42",
+        "title": "Rs-422 Railgun",
+        "shortName": "RS_422_RAILGUN"
+      },
+      {
+        "name": "Reinf",
+        "title": "Reinforce",
+        "shortName": "REINFORCE"
+      },
+      {
+        "name": "Resup",
+        "title": "Resupply",
+        "shortName": "RESUPPLY"
+      },
+      {
+        "name": "Resup",
+        "title": "Resupply Pack",
+        "shortName": "RESUPPLY_PACK"
+      },
+      {
+        "name": "SEAF",
+        "title": "Seaf Artillery",
+        "shortName": "SEAF_ARTILLERY"
+      },
+      {
+        "name": "SH-20",
+        "title": "Sh-20 Ballistic Shield Backpack",
+        "shortName": "SH_20_BALLISTIC_SHIELD_BACKPACK"
+      },
+      {
+        "name": "SH-20",
+        "title": "Sh-20 Shield Generator Pack",
+        "shortName": "SH_20_SHIELD_GENERATOR_PACK"
+      },
+      {
+        "name": "SOS B",
+        "title": "Sos Beacon",
+        "shortName": "SOS_BEACON"
+      },
+      {
+        "name": "SSSD",
+        "title": "Sssd Delivery",
+        "shortName": "SSSD_DELIVERY"
+      },
+      {
+        "name": "Seism",
+        "title": "Seismic Probe",
+        "shortName": "SEISMIC_PROBE"
+      },
+      {
+        "name": "Uploa",
+        "title": "Upload Data",
+        "shortName": "UPLOAD_DATA"
+      }
     ]
 }
