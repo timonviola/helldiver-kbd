@@ -1,6 +1,7 @@
 """Turn key sequences into C code from web page."""
 from bs4 import BeautifulSoup
 import requests
+import json
 
 ARROW_MAP = {
     "Arrow_1": "_S",
@@ -29,9 +30,44 @@ def a_tag_to_arrow(tag: str):
     return sequence
 
 
+def generate_vial_codes(stratagems: dict[str, list[str]]) -> str:
+    """Generate vial.json custom key code descriptions.
+
+    The output is a json list, with should is manually
+    copied into vial.json.
+
+    The generated list:
+      - MUST match the contents of the `enum` in length and order
+        See: _custom_key_codes
+
+    Reference: https://get.vial.today/docs/custom_keycode.html"""
+
+    def get_keycode_entry(title: str) -> dict[str, str]:
+        """Create custom key code object prototype."""
+        stratagem_code = create_stratagem_code(title)
+        return {
+            # name shown in vial UI
+            "name": title if len(title) <= 5 else title[:5].rstrip(),
+            # show title on hover in vial UI
+            "title": title.replace('_', ' ').title(),
+            # code in key map
+            "shortName": stratagem_code
+        }
+
+    custom_keycodes:list[dict[str,str]] = []
+    for title in stratagems.keys():
+        custom_keycodes.append(get_keycode_entry(title))
+
+    return json.dumps(custom_keycodes, indent=2)
+
+
 def tag_to_title(tag: str):
     """Get value between quote " marks"""
     return tag.split('title="')[-1].split('"')[0].removesuffix(" (page does not exist)")
+
+
+def create_stratagem_code(c: str) -> str:
+    return c.replace(" ", "_").replace("-", "_").replace("/", "").upper()
 
 
 def _key_map_generator(stratagems: dict[str, list[str]]):
@@ -40,7 +76,7 @@ def _key_map_generator(stratagems: dict[str, list[str]]):
         sequence = " ".join(seq)
         branch = "\n".join(
             [
-                f"case {title.replace(' ', '_').replace('-','_').replace('/','').upper()}:",
+                f"case {create_stratagem_code(title)}:",
                 f"  if (record->event.pressed) {{",
                 f"    SEND_STRING( SS_DOWN(X_LCTL) SS_DELAY(35) {sequence} SS_UP(X_LCTL) SS_DELAY(35) _MB1);",
                 f"  }} else {{",
@@ -53,14 +89,22 @@ def _key_map_generator(stratagems: dict[str, list[str]]):
     return c_code
 
 
-def _custom_key_codes(stratagems: dict[str, list[str]]):
+def _custom_key_codes(stratagems: dict[str, list[str]], *, suffix=" = QK_KB_0"):
+    """Each stratagem gets a custom key code.
+
+    These values are used to populate an enum at the top of the keymap file.
+    - The first entry has to be suffixed with ` = QK_KB_0`
+
+    """
     c_code = ""
+    is_first_code = True
     for title in stratagems.keys():
-        c_code = (
-            c_code
-            + title.replace(" ", "_").replace("-", "_").replace("/", "").upper()
-            + ",\n"
-        )
+        if is_first_code:
+            is_first_code = False
+            c_code = c_code + create_stratagem_code(title) + suffix + ",\n"
+            continue
+        
+        c_code = c_code + create_stratagem_code(title) + ",\n"
     return c_code
 
 
@@ -90,7 +134,10 @@ def main():
                 seq = a_tag_to_arrow(cells[2])
                 stratagems[tit] = seq
 
+    # sort by key name for human searchability
+    stratagems = dict(sorted(stratagems.items()))
     print(_custom_key_codes(stratagems))
+    print(generate_vial_codes(stratagems))
     print(_key_map_generator(stratagems))
 
 
