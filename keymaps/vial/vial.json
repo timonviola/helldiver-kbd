@@ -1,0 +1,33 @@
+{
+    "name": "helldipper",
+    "vendorId": "0xFEED",
+    "productId": "0x0007",
+    "matrix": {
+        "rows": 3,
+        "cols": 3
+    },
+    "layouts": {
+        "keymap": [
+            ["0,0", "0,1", "0,2"],
+            ["1,0", "1,1", "1,2"],
+            ["2,0", "2,1", "2,2"]
+        ]
+    },
+    "customKeycodes": [
+        {
+            "name": "AAC_8_AUTOCANNON_SENTRY",
+            "title": "AAC 8 Autocannon Sentry",
+            "shortName": "AAC_8_AUTOCANNON_SENTRY"
+        },
+        {
+          "name": "RESUPPLY",
+          "title": "Resupply",
+          "shortName": "RESUPPLY"
+        },
+        {
+            "name": "REINFORCE",
+            "title": "Reinforce",
+            "shortName": "REINFORCE"
+        }
+    ]
+}

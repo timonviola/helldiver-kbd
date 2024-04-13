@@ -1,0 +1,10 @@
+{
+    "keyboard_name": "helldiver",
+    "manufacturer": "timonviola",
+    "url": "https://github.com/timonviola/3W6/",
+    "maintainer": "timonviola",
+    "usb": {
+        "vid": "0x7476",
+        "pid": "0x6864"
+    }
+}
