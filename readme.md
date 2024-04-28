@@ -1,6 +1,6 @@
 # helldiver-kbd firmware
 
-_helldiver-kbd is 9key macro-keyboard built for the popular game Helldivers 2._
+_helldiver-kbd is a 9key macro-keyboard built for the popular game Helldivers 2._
 
 *why?*
 
@@ -9,7 +9,7 @@ _helldiver-kbd is 9key macro-keyboard built for the popular game Helldivers 2._
 *how?*
 
 - The 'default' keymap supports [QMK](https://github.com/qmk/qmk_firmware).
-- The vial keymap support [VIAL](https://github.com/vial-kb/vial-qmk) and there is a companion app with vial [Strataman](https://github.com/timonviola/strataman).
+- The vial keymap support [VIAL](https://github.com/vial-kb/vial-qmk) and there is a companion app with [Strataman](https://github.com/timonviola/strataman).
 
 
 1. Set up your qmk build env.
@@ -28,8 +28,9 @@ To customize the keymap, edit `keymaps/default/keymap.c`:
 - Pro-micro support (ATmega32u4) is default, you can easily use other mcu-s. (Especially with VIAL, it will be easier to fit the firmware into memory using e.g. blackpill.)
 
 ## building your own
-Personally I have equal amount of fun working on this project (or evenmore) as playing the game. I encourage you to build your own keyboard :) 
+Personally I have equal amount of fun working on this project (or evenmore) as playing the game. I encourage you to build your own keyboard :)
 
+<img src="docs/IMG_6960.jpg" width="150">
 
 # todo
 - [x] via or some UI way of editing keymap so it's more approachable
